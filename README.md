@@ -2,12 +2,14 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* Project Details
+* Tech Stack
 
-## Instructions
+## Project Details
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+Landing page where navigation is built dynamically and updates according to the section added. Also the section gets highlighted when the section is in the viewport and the navigation link corresponding to that section also gets highlighted at the same time.
+No anchor tags are used and smooth scrolling is present for better user experience. ES6 is used and the page is responsive.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Tech Stack
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+HTML, CSS, and JavaScript is used.

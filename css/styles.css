@@ -76,15 +76,25 @@ section {
 .navbar__menu ul {
     padding-left: 5px;
     margin: 5px;
-    text-align: right;
     color: black;
 }
 
 .navbar__menu li {
-    display: inline-block;
+    display: block;
     padding: 5px;
     margin: 5px;
     cursor: pointer;
+    text-align: center;
+}
+
+@media only screen and (min-width: 35em){
+    .navbar__menu ul {
+        text-align: right;
+    }
+
+    .navbar__menu li {
+        display: inline-block;
+    }
 }
 
 .navbar__menu .menu__link {

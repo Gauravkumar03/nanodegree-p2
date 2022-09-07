@@ -12,9 +12,18 @@
  * JS Standard: ESlint
  * 
 */
-let nav_list = document.getElementById('navbar__list')
 
-let sectionArray = document.querySelectorAll('.landing__container')
+// List of global variables.
+
+const nav_list = document.getElementById('navbar__list')
+
+
+// all the sections corresponding to class .landing__container have been selected
+
+const sectionArray = document.querySelectorAll('.landing__container')
+
+// looping through each section and appending nav link corresponding to the section and adding event listener to each link to scroll to that particular section.
+
 for(let section of sectionArray) {
     let id = section.parentNode.id
     let heading = section.children[0].innerText
@@ -28,9 +37,14 @@ for(let section of sectionArray) {
     nav_list.append(li)
 }
 
+
+// invoking the makeActive function on each scroll event
+
 document.addEventListener('scroll', function() {
     makeActive()
 })
+
+// function to highlight the section and its corresponding nav link by applying active state to the section and nav link class and applying css to it. Section is highlighted using position fetched by getBoundingClientRect method on section which return the position of the rectange from the top left of viewport.
 
 function makeActive() {
     for(let section of sectionArray) {
@@ -51,53 +65,5 @@ function makeActive() {
     }
 }
 
-
-
-
-/**
- * Comments should be present at the beginning of each procedure and class.
- * Great to have comments before crucial code sections within the procedure.
-*/
-
-/**
- * Define Global Variables
- * 
-*/
-
-
-/**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
-
-
-
-/**
- * End Helper Functions
- * Begin Main Functions
- * 
-*/
-
-// build the nav
-
-
-// Add class 'active' to section when near top of viewport
-
-
-// Scroll to anchor ID using scrollTO event
-
-
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-
-// Build menu 
-
-// Scroll to section on link click
-
-// Set sections as active
 
 
